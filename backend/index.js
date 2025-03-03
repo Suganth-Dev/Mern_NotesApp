@@ -313,11 +313,7 @@ app.get("/search-notes/", authenticateToken, async(req, res)=>{
     }
 })
 
-const PORT = process.env.PORT || 7000;
-
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+app.listen(7000)
 
 
 module.exports = app
